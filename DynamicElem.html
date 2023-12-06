@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="my-container">
+
+    </div>
+
+    <button id="clickButton">Click me</button>
+    
+
+    <script>
+        // dunamically elements create
+        
+        const button = document.getElementById('clickButton');
+        const container = document.getElementById('my-container');
+
+        button.addEventListener("click", () => {
+            const el = document.createElement("h1");
+            el.innerText = "Piyush Garg";
+            container.appendChild(el);
+        })
+
+    </script>
+</body>
+</html>
